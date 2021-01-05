@@ -1,3 +1,12 @@
+#
+mkdir 'dir'
+cd 'dir'
+wp core download --locale=fr_FR
+wp core install --url=example.com --title=Example --admin_user=supervisor 
+	--admin_password=strongpassword --admin_email=info@example.com
+
+deplacer le dossier custom-theme dans wp-content/theme
+
 # Demarrage
 ## serveur de dev PHP 
 php -S localhost:8000
