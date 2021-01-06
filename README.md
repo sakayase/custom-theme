@@ -1,8 +1,13 @@
-#
-mkdir 'dir'
-cd 'dir'
-wp core download --locale=fr_FR
-wp core install --url=example.com --title=Example --admin_user=supervisor 
+# Créer un wordpress
+- mkdir 'dir'
+- cd 'dir'
+- wp core download --locale=fr_FR
+
+- créer base de donnée : script mkdb.sh dans install-script (jibundeyare)
+Ou créer base de données manuellement
+
+- wp config create --dbname=testing --dbuser=wp --dbpass=securepswd 
+- wp core install --url=example.com --title=Example --admin_user=supervisor 
 	--admin_password=strongpassword --admin_email=info@example.com
 
 deplacer le dossier custom-theme dans wp-content/theme
