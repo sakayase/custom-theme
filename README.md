@@ -27,6 +27,11 @@ faire attention pour le back office à avoir une adresse de type /wp-admin/ (le 
 - https://developer.wordpress.org/themes/basics/the-loop/
 - https://developer.wordpress.org/themes/basics/including-css-javascript/
 
+## Composer : 
+https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+Normalement installation sans composer mais on peut avec 
+" composer require wp-bootstrap/wp-bootstrap-navwalker v4.3.0 "
+
 ## Misc
 
 - https://rudrastyh.com/wordpress/include-css-and-javascript.html

@@ -1,5 +1,16 @@
 <?php 
 
+require __DIR__.'/vendor/autoload.php';               // importe bootstrap-navwalker
+require __DIR__.'/vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php'; //necessaire pour que cela fonctionne
+
+register_nav_menus( array(
+    'main' => __( 'Menu Principal', 'custom-theme' ), //permet de créer un menu configurable
+) );                                                  //et compatible avec bootstrap
+
+register_nav_menus( array(
+    'footer' => __( 'Pied de Page', 'custom-theme' ),
+) );
+
 add_theme_support( 'post-thumbnails' );
 
 function add_theme_scripts() {
